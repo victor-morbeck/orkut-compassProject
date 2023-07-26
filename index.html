@@ -1,13 +1,257 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="shortcut icon" href="assets/images/orkut.svg" type="image/x-icon">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo-orkut.svg" alt="logo">
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#" id="rosa">Perfil</a>
+            <a href="#">Comunidades</a>
+            <a href="#">Jogos</a>
+        </nav>
+
+        <div class="pesquisa">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input type="search" id="btnPesquisa" alt="Pesquisar" placeholder="Pesquisar no Orkut">
+        </div>
+
+        <div class="perfil">
+            <img src="./images/user-image.jpeg" alt="imagem do perfil">
+            <p class="nome">Iuri Silva</p>
+            <span class="material-symbols-outlined" onclick="perfil()">
+                expand_more
+            </span>
+
+            <div class="perfil_mais perfil" id="mais">
+                <span class="material-symbols-outlined" >
+                    logout
+                </span>
+                <p>Sair</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pesquisa">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input type="search" id="btnPesquisa" alt="Pesquisar" placeholder="Pesquisar no Chat">
+        </div>
+
+        <div class="perfil">
+            <div class="detalhes">
+                <img src="./images/user-image.jpeg" alt="imagem do perfil">
+                <h2>Iuri Silva</h2>
+                <p>Solteiro, Brasil</p>
+            </div>
+
+            <div class="editar">
+                <p>Editar meu perfil</p>
+            </div>
+        </div>
+
+        <div class="informacoes">
+            <h2>Boa noite, Iuri Silva</h2>
+            <span id="frase">“Não é a linguagem de programação que define o programador, mas sim sua lógica.”</span>
+
+            <div class="emojis">
+                <div class="divisao">
+                    <span>
+                        <p>Fãs</p>
+                        <span id="estrela">
+                            <span class="material-symbols-outlined amarelo">
+                                star
+                            </span>
+                            <p>76</p> 
+                        </span>
+                    </span>
+
+                    <span>
+                        <p>Confiável</p>
+                        <span class="material-symbols-outlined amarelo">
+                            sentiment_satisfied
+                        </span>
+                        <span class="material-symbols-outlined amarelo">
+                            sentiment_satisfied
+                        </span>
+                    </span>
+                </div>
+
+                <div class="divisao">
+                    <span>
+                        <p>Legal</p>
+                        <span class="material-symbols-outlined azul">
+                            thumb_up
+                        </span>
+                        <span class="material-symbols-outlined azul">
+                            thumb_up
+                        </span>
+                        <span class="material-symbols-outlined azul">
+                            thumb_up
+                        </span>
+                    </span>
+
+                    <span>
+                        <p>Sexy</p>
+                        <span class="material-symbols-outlined rosa">
+                            favorite
+                        </span>
+                        <span class="material-symbols-outlined rosa">
+                            favorite
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <p>Relacionamento: <span>Solteiro</span></p>
+            <p>Aniversário: <span>07 de março</span></p>
+            <p>Idade: <span>20</span></p>
+            <p>Interesses no Orkut: <span>Solteiro</span></p>
+            <p>Quem sou eu: <span>Programador</span></p>
+            <p>Filhos: <span>Não</span></p>
+            <p>Sexo: <span>Masculino</span></p>
+            <p>Fumo: <span>Não</span></p>
+            <p>Bebo: <span>Não</span></p>
+            <p>Moro: <span>Rio de Janeiro</span></p>
+            <p>País: <span>Brasil</span></p>
+            <p>Cidade Natal: <span>Rio de Janeiro</span></p>
+            <p>
+                Músicas: 
+                <span class="borda">Pop</span>
+                <span class="borda mais">Rock</span>
+                <span class="todos">Ver todos</span>
+            </p>
+            <p>
+                Filmes: 
+                <span class="borda">Homem-aranha</span>
+                <span class="todos">Ver todos</span>
+            </p>
+        </div>
+        
+        <div class="amigos_comunid">
+            <div class="amigos">
+            <span class="titulo">
+                <p>Amigos (207)</p>
+                <p class="todos">Ver todos</p>
+            </span>
+
+            <div class="perfil_amigos">
+                <div class="divisao">
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_2EGNqazbAMk.png" alt="foto amigo">
+                        <p>Fernando</p>
+                    </div>
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_3TLl_97HNJo.png" alt="foto amigo">
+                        <p>Clara</p>
+                    </div>
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_d1UPkiFd04A.png" alt="foto amigo">
+                        <p>Marcos</p>
+                    </div>
+                </div>
+                
+                <div class="divisao">
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_iFgRcqHznqg.png" alt="foto amigo">
+                        <p>Juan</p>
+                    </div>
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_j3lf-Jn6deo.png" alt="foto amigo">
+                        <p>Gustavo</p>
+                    </div>
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_mEZ3PoFGs_k.png" alt="foto amigo">
+                        <p>Laura</p>
+                    </div>
+                </div>
+
+                <div class="divisao">
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_QJEVpydulGs.png" alt="foto amigo">
+                        <p>Ryan</p>
+                    </div>
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_ttSRjiYG_WM.png" alt="foto amigo">
+                        <p>Karina</p>
+                    </div>
+                    <div class="perfil_amigo">
+                        <img src="images/amigos/unsplash_sibVwORYqs0.png" alt="foto amigo">
+                        <p>Jonas</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="comunidades">
+            <span class="titulo">
+                <p>Comunidade (35)</p>
+                <p class="todos">Ver todos</p>
+            </span>
+
+            <div class="img_comunidades">
+                <div class="divisao">
+                    <div class="comunidade">
+                        <img src="images/comunidade/unsplash__4sWbzH5fp8.png" alt="foto amigo">
+                        <p>Carros</p>
+                    </div>
+                    <div class="comunidade">
+                        <img src="images/comunidade/unsplash_auEPahZjT40.png" alt="foto amigo">
+                        <p>Comida</p>
+                    </div>
+                    <div class="comunidade">
+                        <img src="images/comunidade/unsplash_DomqHKN2Xik.png" alt="foto amigo">
+                        <p>Anime</p>
+                    </div>
+                </div>
+                
+                <div class="divisao">
+                    <div class="comunidade">
+                        <img src="images/comunidade/unsplash_RrhhzitYizg.png" alt="foto amigo">
+                        <p>Livros</p>
+                    </div>
+                    <div class="comunidade">
+                        <img src="images/comunidade/unsplash_rz3eCYGgGSc.png" alt="foto amigo">
+                        <p>Filmes</p>
+                    </div>
+                    <div class="comunidade">
+                        <img src="images/comunidade/unsplash_uTj6-eZeHto.png" alt="foto amigo">
+                        <p>Leitura</p>
+                    </div>
+                </div>
+
+                <div class="divisao">
+                    <div class="comunidade">
+                        <img src="images/comunidade/unsplash_W0ixyS5kSIk.png" alt="foto amigo">
+                        <p>Animais</p>
+                    </div>
+                    <div class="comunidade">
+                        <img src="images/comunidade/unsplash_wnXo6T_cb3s.png" alt="foto amigo">
+                        <p>Arte</p>
+                    </div>
+                    <div class="comunidade">
+                        <img src="./images/comunidade/unsplash_zUNs99PGDg0.png" alt="foto amigo">
+                        <p>Café</p>
+                    </div>
+                </div>
+            </div>
+            </div> 
+        </div>
+    </main>
+
+    <script src="./js/profile.js"></script>
+</body>
 </html>
