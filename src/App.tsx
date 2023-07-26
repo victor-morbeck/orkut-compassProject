@@ -11,6 +11,7 @@ const App: React.FC = () => {
     setIsLoggedIn(true);
   };
 
+<<<<<<< HEAD
   return (
     <div className="App">
       <Header isLoggedIn={isLoggedIn} />
@@ -20,3 +21,19 @@ const App: React.FC = () => {
 };
 
 export default App;
+=======
+import React from 'react';
+import Header from './components/Header';
+import './App.css';
+
+const App: React.FC = () => {
+  return (
+    <div className="app">
+      <Header />
+      {/* Outras seções do LinkedIn seriam adicionadas aqui */}
+    </div>
+  );
+}
+
+export default App;
+>>>>>>> ca86d38deb62066601a19959fe67346e98c2c8f6
