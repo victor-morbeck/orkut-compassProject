@@ -45,39 +45,39 @@ header nav{
     display: none;
 }
 
-header div.pesquisa{
+header div.search{
     display: none;
 }
 
-header div.perfil{
+header div.profile{
     cursor: pointer;
 }
 
-header div.perfil p.nome{
+header div.profile p.name{
     display: none;
 }
 
-header div.perfil img{
+header div.profile img{
     width: 40px;
     height: 40px;
     flex-shrink: 0;
     border-radius: 80px;
 }
 
-header div.perfil span{
+header div.profile span{
     width: 30px;
     cursor: pointer;
 }
 
-header div.perfil:hover{
+header div.profile:hover{
     color: #ED2590;
 }
 
-header div.perfil div.perfil{
+header div.profile div.profile{
     display: none;
 }
 
-header div.perfil div.perfil_active{
+header div.profile div.profile_active{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -88,7 +88,7 @@ main{
     padding: 20px;
 }
 
-main div.pesquisa{
+main div.search{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -101,13 +101,13 @@ main div.pesquisa{
     margin: 20px 80px;
 }
 
-main div.pesquisa span{
+main div.search span{
     cursor: pointer;
     color: var(--dark-light);
     font-size: 1.6em;
 }
 
-main input#btnPesquisa{
+main input#btnSearch{
     padding: 5px;
     float: right;
     background-color:transparent;
@@ -117,7 +117,7 @@ main input#btnPesquisa{
     width: 100%;
 }
 
-main div.perfil{
+main div.profile{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +127,7 @@ main div.perfil{
     text-align: center;
 }
 
-main div.perfil div.detalhes{
+main div.profile div.details{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,13 +140,13 @@ main div.perfil div.detalhes{
     width: 100%;
 }
 
-main div.perfil div.detalhes img{
+main div.profile div.details img{
     border: 4px solid var(--pink);
     border-radius: 50%;
     width: 15vw;
 }
 
-main div.perfil div.editar{
+main div.profile div.edit{
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
@@ -155,15 +155,15 @@ main div.perfil div.editar{
     width: 100%;
 }
 
-main div.perfil div.editar p{
+main div.profile div.edit p{
     cursor: pointer;
 }
 
-main div.perfil div.editar p:hover{
+main div.profile div.edit p:hover{
     text-decoration: underline;
 }
 
-main div.informacoes{
+main div.info{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,11 +174,11 @@ main div.informacoes{
     border-radius: 10px;
 }
 
-main div.informacoes h2{
+main div.info h2{
     font-size: 1.4em;
 }
 
-main div.informacoes span#frase{
+main div.info span#text{
     font-size: .8em;
     background-color: #EFF3F8;
     margin: 10px 0px;
@@ -186,18 +186,18 @@ main div.informacoes span#frase{
     border-radius: 10px;
 }
 
-main div.informacoes .emojis{
+main div.info .emojis{
     margin: 20px 0px;
 }
 
-main div.informacoes .emojis .divisao{
+main div.info .emojis .division{
     display: flex;
     flex-direction: row;
     gap: 25px;
     margin: 15px 0px;
 }
 
-main div.informacoes .emojis .divisao span#estrela{
+main div.info .emojis .division span#star{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -206,54 +206,54 @@ main div.informacoes .emojis .divisao span#estrela{
     color: var(--gray);
 }
 
-main div.informacoes .emojis .divisao span.amarelo{
+main div.info .emojis .division span.yellow{
     color: #FACF41;
 }
 
-main div.informacoes .emojis .divisao span.azul{
+main div.info .emojis .division span.blue{
     color: #26CAFF;
 }
 
-main div.informacoes .emojis .divisao span.rosa{
+main div.info .emojis .division span.pink{
     color: #ED2590;
 }
 
-main div.informacoes > p{
+main div.info > p{
     font-size: 0.9em;
     color: var(--gray);
     margin-bottom: 20px;
 }
 
-main div.informacoes > p > span{
+main div.info > p > span{
     color: var(--dark-light);
     margin-left: 10px;
     padding: 5px;
 }
 
-main div.informacoes > p > span.borda{
+main div.info > p > span.border{
     border-radius: 18px;
     border: 2px solid var(--pink);
 }
 
-main div.informacoes > p > span.mais{
+main div.info > p > span.more{
     display: none;
 }
 
-main div.informacoes > p > span.todos{
+main div.info > p > span.all{
     cursor: pointer;
     color: var(--pink);
 }
 
-.todos{
+.all{
     cursor: pointer;
     color: var(--pink);
 }
 
-.todos:hover{
+.all:hover{
     text-decoration: underline;
 }
 
-main div.amigos{
+main div.friends{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,7 +264,7 @@ main div.amigos{
     border-radius: 10px;
 }
 
-main div.amigos > span.titulo{
+main div.friends > span.title{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -273,7 +273,7 @@ main div.amigos > span.titulo{
     width: 100%;
 }
 
-main div.amigos div.perfil_amigos{
+main div.friends div.profile_friends{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,7 +281,7 @@ main div.amigos div.perfil_amigos{
     margin: 10px auto;
 }
 
-main div.amigos div.perfil_amigos div.divisao{
+main div.friends div.profile_friends div.division{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -289,12 +289,12 @@ main div.amigos div.perfil_amigos div.divisao{
     gap: 20px;
 }
 
-main div.amigos div.perfil_amigos div.divisao div{
+main div.friends div.profile_friends div.division div{
     text-align: center;
     padding: 5px;
 }
 
-main div.comunidades{
+main div.communitys{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,7 +305,7 @@ main div.comunidades{
     border-radius: 10px;
 }
 
-main div.comunidades > span.titulo{
+main div.communitys > span.title{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -314,7 +314,7 @@ main div.comunidades > span.titulo{
     width: 100%;
 }
 
-main div.comunidades div.img_comunidades{
+main div.communitys div.img_communitys{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,7 +322,7 @@ main div.comunidades div.img_comunidades{
     margin: 10px auto;
 }
 
-main div.comunidades div.img_comunidades div.divisao{
+main div.communitys div.img_communitys div.division{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -330,37 +330,37 @@ main div.comunidades div.img_comunidades div.divisao{
     gap: 20px;
 }
 
-main div.comunidades div.img_comunidades div.divisao div{
+main div.communitys div.img_communitys div.division div{
     text-align: center;
     padding: 5px;
 }
 
 @media screen and (max-width: 470px){
-    main div.pesquisa{
+    main div.search{
         margin: 20px 10px;
     }
 
-    main div.perfil{
+    main div.profile{
         margin: 20px 10px;
     }
 
-    main div.informacoes{
+    main div.info{
         margin: 20px 10px;
     }
 
-    main div.amigos{
+    main div.friends{
         margin: 20px 10px;
     }
 
-    main div.comunidades{
+    main div.communitys{
         margin: 20px 10px;
     }
 
-    main div.amigos div.perfil_amigos div.divisao{
+    main div.friends div.profile_friends div.division{
         flex-direction: column;
     }
 
-    main div.comunidades div.img_comunidades div.divisao{
+    main div.communitys div.img_communitys div.division{
         flex-direction: column;
     }
 }
@@ -379,11 +379,11 @@ main div.comunidades div.img_comunidades div.divisao div{
         color: var(--dark-light);
     }
 
-    header nav a#rosa{
+    header nav a#pink{
         color: var(--pink);
     }
     
-    header div.pesquisa{
+    header div.search{
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
@@ -395,13 +395,13 @@ main div.comunidades div.img_comunidades div.divisao div{
         padding: 5px;
     }
     
-    header div.pesquisa span{
+    header div.search span{
         cursor: pointer;
         color: var(--dark-light);
         font-size: 1.3em;
     }
     
-    header input#btnPesquisa{
+    header input#btnSearch{
         padding: 5px;
         float: right;
         background-color: #EFF3F8;
@@ -411,7 +411,7 @@ main div.comunidades div.img_comunidades div.divisao div{
         width: 100%;
     }
 
-    header div.perfil{
+    header div.profile{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -419,7 +419,7 @@ main div.comunidades div.img_comunidades div.divisao div{
         gap: 5px;
     }
 
-    header div.perfil p.nome{
+    header div.profile p.name{
         display: block;
     }
     
@@ -431,48 +431,48 @@ main div.comunidades div.img_comunidades div.divisao div{
         margin: 20px;
     }
 
-    main div.pesquisa{
+    main div.search{
         display: none;
     }
 
-    main div.perfil{
+    main div.profile{
         padding: 0px 20px;
     }
 
-    main div.informacoes{
+    main div.info{
         padding: 35px;
         margin: 20px 0px;
     }
 
-    main div.informacoes .emojis{
+    main div.info .emojis{
         display: flex;
         flex-direction: row;
         gap: 30px;
     }
 
-    main div.informacoes > p > span.mais{
+    main div.info > p > span.more{
         display: inline;
     }
     
-    div.amigos_comunid{
+    div.friends_community{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0px 20px;
     }
 
-    div.amigos{
+    div.friends{
         flex-wrap: nowrap;
         padding: 0;
         margin: 50px;
     }
 
-    div.comunidades{
+    div.communitys{
         padding: 0;
         margin: 50px;
     }
 
-    main div.amigos div.perfil_amigos div.divisao div img{
+    main div.friends div.profile_friends div.division div img{
         cursor: pointer;
     }
 }
