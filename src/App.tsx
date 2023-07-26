@@ -1,6 +1,10 @@
 import { RegisterForm } from "./components/RegisterForm"
 
 
+import React from 'react';
+import { RegisterForm } from "./components/RegisterForm"
+import './App.css';
+
 function App() {
   
   return (
@@ -11,3 +15,4 @@ function App() {
 }
 
 export default App
+

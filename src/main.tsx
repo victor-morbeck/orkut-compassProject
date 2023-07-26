@@ -1,10 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from 'react';
+import './Header.css';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const Header: React.FC = () => {
+  return (
+    <header className="header">
+      {/* Conteúdo do cabeçalho, como logo, botões, barra de pesquisa, etc. */}
+    </header>
+  );
+}
+
+export default Header;
