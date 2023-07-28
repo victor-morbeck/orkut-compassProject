@@ -1,4 +1,4 @@
-import './TextArea.css';
+
 import React, { ChangeEvent } from 'react';
 
 interface TextAreaProps {
