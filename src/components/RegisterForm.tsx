@@ -1,13 +1,10 @@
 
-import './RegisterForm.css'
-
+import "./RegisterForm.css"
 
 export const RegisterForm = () => {
   return (
     <>
     
-    {/* //Nome, email, datNasc,cidade/estado, senha e confirmação de senha */}
-
     <div className="formContainer">
         <label>
             <span>Nome: </span>
@@ -39,3 +36,5 @@ export const RegisterForm = () => {
     </>
   )
 }
+
+export default RegisterForm
