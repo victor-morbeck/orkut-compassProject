@@ -1,14 +1,11 @@
-
-
 import React from 'react';
-import Header from './components/Header';
-import './App.css';
+import './index.css';
+import Header from './components/Header-profile';
+import MainSection from './components/MainSection';
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      <Header />
-      {/* Outras seções do LinkedIn seriam adicionadas aqui */}
+    <div className="App">
     </div>
   );
 }
