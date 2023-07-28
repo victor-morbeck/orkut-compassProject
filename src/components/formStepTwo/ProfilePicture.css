@@ -1,0 +1,14 @@
+.profile-picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-picture-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture-img {
+    max-width: 200px;
+  }
