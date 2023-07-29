@@ -1,3 +1,26 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "SFDisplay";
+    src: url("./assets/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+    
+}
+
+body{
+    font-family: "SFDisplay", serif;
+    background: #d9e6f7;
+}
+
+input{
+    background-color: #eff3f8 !important;
+}
+
+=======
  @charset "UTF-8";
 
 :root {
@@ -598,3 +621,4 @@ main div.communitys div.img_communitys div.division div {
         cursor: pointer;
     }
 } 
+
