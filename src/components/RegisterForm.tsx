@@ -1,8 +1,11 @@
 
- import { useState } from "react"
  import "./RegisterForm.css"
 
  export const RegisterForm = () => {
+
+    //Deixar para coletar e validar esses dados depois
+
+
     //  Gerenciamento de dados
 
     //  const [name, setName] = useState()
@@ -15,33 +18,44 @@
    return (
      <>
     
-     <div className="formContainer">
+     <div className="Form_container">
+     
+
+     <form>
+    <img src="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=171980-3543&mode=dev" alt="" />
+     <h2>Acesse o Orkut</h2>
          <label>
-             <span>Nome: </span>
-             <input type="text"  />
+             
+             <input type="text" placeholder="Nome" />
          </label>
          <label>
-             <span>Email: </span>
-             <input type="email"  />
+           
+             <input type="email" placeholder="E-mail" />
          </label>
          <label>
-             <span>Data de nascimento: </span>
-             <input type="text"/>
+             
+             <input type="text" placeholder="Nascimento"/>
          </label>
          <label>
-             <span>Cidade e Estado: </span>
-             <input type="text"  />
+             
+             <input type="text"  placeholder="Cidade"/>
          </label>
          <label>
-             <span>Senha: </span>
-             <input type="password"  />
+             
+             <input type="text"  placeholder="Estado"/>
          </label>
          <label>
-             <span>Confirmação de senha: </span>
-             <input type="password"  />
+            
+             <input type="password" placeholder="Senha"  />
          </label>
-     </div>
-    
+         <label>
+            
+             <input type="password"  placeholder="Confirme sua senha"/>
+         </label>
+         <input type="submit" value="Cadastrar" id="submitButton"/>
+         </form>
+         </div>
+     
     
      </>
    )
