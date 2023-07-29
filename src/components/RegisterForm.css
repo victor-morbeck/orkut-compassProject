@@ -1,0 +1,16 @@
+.formContainer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 384px;
+    height: 598px;
+    flex-shrink: 0;
+
+}
+
+input{
+    display: block;
+    margin: 10px;
+}

@@ -1,15 +1,14 @@
-import React from 'react';
-import RegisterPageTwo from './components/RegisterPageTwo'; // Substitua "caminho-para" pelo caminho real para RegisterPageTwo.tsx
 
-const App: React.FC = () => {
-    return (
-      <div>
-        <h1>Meu App</h1>
-        {/* Adicione aqui o conteúdo que deseja renderizar */}
-        <RegisterPageTwo />
-      </div>
-    );
-  };
+import { RegisterForm } from "./components/RegisterForm"
+function App() {
   
-  export default App;
-  
+  return (
+    <>
+      <h2>Forms</h2>
+      <RegisterForm/>
+    </>
+  )
+}
+
+export default App
+
