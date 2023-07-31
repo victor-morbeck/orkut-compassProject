@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import FormStepTwo from './components/formStepTwo/formStepTwo';
 import EditProfile from './components/formStepTwo/EditProfile'; 
 
+
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
 
@@ -32,3 +33,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+

@@ -1,8 +1,6 @@
-import React from 'react';
-import './Profile.css'
+/* import React from 'react';
 
-
-const Profile: React.FC = () => {
+const MainSection: React.FC = () => {
   return (
     <main>
       <div className="profile">
@@ -208,6 +206,6 @@ const Profile: React.FC = () => {
       </div>
     </main>
   );
-};
+}
 
-export default Profile;
+export default MainSection; */
