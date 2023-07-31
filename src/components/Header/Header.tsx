@@ -21,6 +21,13 @@ const Header: React.FC<HeaderProps> = ({ isLoggedIn }) => {
               <li>Comunidades</li>
               <li>Jogos</li>
               <input className="header-input" type="text" placeholder="Pesquisar no Orkut" />
+              <div className="profile">
+        <img src="./images/user-image.jpeg" alt="profile image"/>
+        <p className="name">Iuri Silva</p>
+        <span className="material-symbols-outlined">
+          expand_more
+        </span>
+      </div>
             </>
           ) : (
             <>
