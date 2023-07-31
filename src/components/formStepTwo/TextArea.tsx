@@ -9,11 +9,15 @@ interface TextAreaProps {
 
 const TextArea: React.FC<TextAreaProps> = ({ label, value, onChange }) => {
   return (
-    <div>
-      <label>{label}</label>
-      <textarea value={value} onChange={onChange} />
+    <div className="textarea-container">
+      <label className="textarea-label">{label}</label>
+      <textarea
+      className="textarea-input"
+      value={value}
+      onChange={onChange} />
     </div>
   );
 };
+
 
 export default TextArea;

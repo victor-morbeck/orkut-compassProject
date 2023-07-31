@@ -1,10 +1,12 @@
-import React, { useRef, ChangeEvent } from 'react';
+import React, { useRef, ChangeEvent, useState } from 'react';
+import './ProfilePicture.css';
 
 interface ProfilePictureProps {
   onFileSelect: (file: File) => void;
 }
 
 const ProfilePicture: React.FC<ProfilePictureProps> = ({ onFileSelect }) => {
+  const [imageUrl, setImageUrl] = useState<string>("/profilePictureNull.jpg"); // Estado local para armazenar o URL da imagem selecionada
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileSelect = () => {
@@ -17,15 +19,24 @@ const ProfilePicture: React.FC<ProfilePictureProps> = ({ onFileSelect }) => {
     if (e.target.files && e.target.files.length > 0) {
       const selectedFile = e.target.files[0];
       onFileSelect(selectedFile);
+
+      // Lendo o arquivo de imagem como URL e atualizando o estado local
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        if (event.target?.result) {
+          setImageUrl(event.target.result as string);
+        }
+      };
+      reader.readAsDataURL(selectedFile);
     }
   };
 
   return (
     <div className="profile-picture-container">
-      <h3> Foto de Perfil</h3>
+      <h3 className="profile-picture-text">Foto de Perfil</h3>
       <div className="profile-picture-content">
         <img
-          src="/profilePictureNull.jpg"
+          src={imageUrl}
           alt="Foto de Perfil"
           className="profile-picture-img"
         />
@@ -36,7 +47,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = ({ onFileSelect }) => {
         style={{ display: 'none' }}
         onChange={handleFileChange}
       />
-      <button onClick={handleFileSelect}>Procurar</button>
+      <button className="photo-button" onClick={handleFileSelect}>Procurar</button>
     </div>
   );
 };

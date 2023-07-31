@@ -9,7 +9,7 @@ const Sex: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="sex-container">
       <label>
         <input
           type="checkbox"
