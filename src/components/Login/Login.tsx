@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 
@@ -13,6 +14,7 @@ interface LoginProps {
   }
 
   const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
+    const navigate = useNavigate();
     const [loginState, setLoginState] = useState<LoginState>({
       email: '',
       password: '',
@@ -28,7 +30,6 @@ interface LoginProps {
   };
 
   const handleLogin = () => {
-    // Aqui você pode adicionar a lógica de validação dos campos e a navegação para a página de perfil.
     const { email, password } = loginState;
     const errorMessages: { email: string; password: string } = { email: '', password: '' };
 
@@ -43,9 +44,8 @@ interface LoginProps {
     if (errorMessages.email || errorMessages.password) {
       setLoginState({ ...loginState, errorMessages });
     } else {
-      // Neste exemplo, usamos um alerta para simular o redirecionamento para a página de perfil após o login.
-      alert('Login bem-sucedido! Redirecionando para o perfil...');
-      // Aqui você pode adicionar a navegação real para a página de perfil, por exemplo, usando react-router-dom.
+      alert('Carregando...');
+      navigate('/profile');
       onLoginSuccess();
     }
   };
@@ -55,10 +55,10 @@ interface LoginProps {
     <div className="login-container">
       <h1>Login</h1>
       <div className="form-group">
-        <label>E-mail:</label>
         <input
           type="text"
           name="email"
+          placeholder='E-mail'
           value={loginState.email}
           onChange={handleChange}
           className={loginState.errorMessages.email ? 'error' : ''}
@@ -68,10 +68,10 @@ interface LoginProps {
         )}
       </div>
       <div className="form-group">
-        <label>Senha:</label>
         <input
           type="password"
           name="password"
+          placeholder='Senha'
           value={loginState.password}
           onChange={handleChange}
           className={loginState.errorMessages.password ? 'error' : ''}
