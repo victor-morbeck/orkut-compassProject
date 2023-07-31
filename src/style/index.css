@@ -11,16 +11,11 @@
     
 }
 
-body{
-    font-family: "SFDisplay", serif;
-    background: #d9e6f7;
-}
 
 input{
     background-color: #eff3f8 !important;
 }
 
-=======
  @charset "UTF-8";
 
 :root {
@@ -31,14 +26,9 @@ input{
   --white: #FDFEFF;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: var(--blue-light);
+  font-family: "SFDisplay", serif;
 }
 
 html,
