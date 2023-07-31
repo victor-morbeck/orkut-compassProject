@@ -1,5 +1,4 @@
 /* import React from 'react';
-
 const MainSection: React.FC = () => {
   return (
     <main>
@@ -9,16 +8,13 @@ const MainSection: React.FC = () => {
           <h2>Iuri Silva</h2>
           <p>Solteiro, Brasil</p>
         </div>
-
         <div className="edit">
           <p>Edit my profile</p>
         </div>
       </div>
-
       <div className="info">
         <h2>Boa tarde, Iuri Silva</h2>
         <span id="text">“Programar sem café é igual poeta sem poesia.”</span>
-
         <div className="emojis">
           <div className="division">
             <span>
@@ -30,8 +26,7 @@ const MainSection: React.FC = () => {
                 <p>85</p>
               </span>
             </span>
-
-            <span>
+           <span>
               <p>Confiável</p>
               <span className="material-symbols-outlined yellow">
                 sentiment_satisfied
@@ -41,7 +36,6 @@ const MainSection: React.FC = () => {
               </span>
             </span>
           </div>
-
           <div className="division">
             <span>
               <p>Legal</p>
@@ -55,7 +49,6 @@ const MainSection: React.FC = () => {
                 thumb_up
               </span>
             </span>
-
             <span>
               <p>Sexy</p>
               <span className="material-symbols-outlined pink">
@@ -67,8 +60,7 @@ const MainSection: React.FC = () => {
             </span>
           </div>
         </div>
-
-        <p>Relacionamento: <span>Solteiro</span></p>
+       <p>Relacionamento: <span>Solteiro</span></p>
         <p>Aniversário: <span>21 de julho</span></p>
         <p>Idade: <span>22</span></p>
         <p>Interesses no Orkut: <span>Solteiro</span></p>
@@ -94,14 +86,12 @@ const MainSection: React.FC = () => {
           <span className="all">Ver todos</span>
         </p>
       </div>
-
       <div className="friends_community">
         <div className="friends">
           <span className="title">
             <p>friends (248)</p>
             <p className="all">Ver todos</p>
           </span>
-
           <div className="profile_friends">
             <div className="division">
               <div className="profile_friend">
@@ -132,7 +122,6 @@ const MainSection: React.FC = () => {
                 <p>Laura</p>
               </div>
             </div>
-
             <div className="division">
               <div className="profile_friend">
                 <img src="images/friends/unsplash_QJEVpydulGs.png" alt="pic_friend" />
@@ -149,14 +138,12 @@ const MainSection: React.FC = () => {
             </div>
           </div>
         </div>
-
         <div className="communitys">
           <span className="title">
             <p>community (35)</p>
             <p className="all">Ver todos</p>
           </span>
-
-          <div className="img_communitys">
+         <div className="img_communitys">
             <div className="division">
               <div className="community">
                 <img src="images/community/unsplash__4sWbzH5fp8.png" alt="pic_community" />
@@ -171,7 +158,6 @@ const MainSection: React.FC = () => {
                 <p>Anime</p>
               </div>
             </div>
-
             <div className="division">
               <div className="community">
                 <img src="images/community/unsplash_RrhhzitYizg.png" alt="pic_community" />
@@ -186,7 +172,6 @@ const MainSection: React.FC = () => {
                 <p>Leitura</p>
               </div>
             </div>
-
             <div className="division">
               <div className="community">
                 <img src="images/community/unsplash_W0ixyS5kSIk.png" alt="pic_community" />
@@ -206,6 +191,4 @@ const MainSection: React.FC = () => {
       </div>
     </main>
   );
-}
-
-export default MainSection; */
+}export default MainSection; */
