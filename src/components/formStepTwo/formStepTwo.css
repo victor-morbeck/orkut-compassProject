@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "SFProDisplay";
+  src: url('../../assets/sf-pro-display-cufonfonts') format('opentype');}
+  /* Outros formatos de fonte também podem ser especificados para suporte a navegadores diferentes */
+
+body {
+  font-family: "SFProDisplay", sans-serif;
+}
+
 .outer-div {
     display: flex;
     justify-content: center; 

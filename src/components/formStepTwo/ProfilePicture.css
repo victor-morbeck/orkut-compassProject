@@ -46,7 +46,7 @@ input[type="file"] {
 }
 
 .photo-button{
-  background-color: black #FDFEFF;
+  background-color: #D9E6F7;
   border: 1px solid #ed2590; /* linha rosa ao redor do textarea */
   border-radius: 5px;
   color: #ed2590;
@@ -60,5 +60,5 @@ input[type="file"] {
 }
 
 .profile-picture-text {
-  color: #4B4B4B
+  color:#ed2590;
 }
