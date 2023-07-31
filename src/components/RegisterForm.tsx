@@ -1,41 +1,64 @@
 
-import './RegisterForm.css'
+ import "./RegisterForm.css"
+
+ export const RegisterForm = () => {
+
+    //Deixar para coletar e validar esses dados depois
 
 
-export const RegisterForm = () => {
-  return (
-    <>
-    
-    {/* //Nome, email, datNasc,cidade/estado, senha e confirmação de senha */}
+    //  Gerenciamento de dados
 
-    <div className="formContainer">
-        <label>
-            <span>Nome: </span>
-            <input type="text"  />
-        </label>
-        <label>
-            <span>Email: </span>
-            <input type="email"  />
-        </label>
-        <label>
-            <span>Data de nascimento: </span>
-            <input type="text"/>
-        </label>
-        <label>
-            <span>Cidade e Estado: </span>
-            <input type="text"  />
-        </label>
-        <label>
-            <span>Senha: </span>
-            <input type="password"  />
-        </label>
-        <label>
-            <span>Confirmação de senha: </span>
-            <input type="password"  />
-        </label>
-    </div>
+    //  const [name, setName] = useState()
+    //  const [email, setEmail] = useState()
     
+    //  const handleName = (e) => {
+        
+     
+
+   return (
+     <>
     
-    </>
-  )
-}
+     <div className="Form_container">
+     
+
+     <form>
+    <img src="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=171980-3543&mode=dev" alt="" />
+     <h2>Acesse o Orkut</h2>
+         <label>
+             
+             <input type="text" placeholder="Nome" />
+         </label>
+         <label>
+           
+             <input type="email" placeholder="E-mail" />
+         </label>
+         <label>
+             
+             <input type="text" placeholder="Nascimento"/>
+         </label>
+         <label>
+             
+             <input type="text"  placeholder="Cidade"/>
+         </label>
+         <label>
+             
+             <input type="text"  placeholder="Estado"/>
+         </label>
+         <label>
+            
+             <input type="password" placeholder="Senha"  />
+         </label>
+         <label>
+            
+             <input type="password"  placeholder="Confirme sua senha"/>
+         </label>
+         <input type="submit" value="Cadastrar" id="submitButton"/>
+         </form>
+         </div>
+     
+    
+     </>
+   )
+ }
+
+ export default RegisterForm
