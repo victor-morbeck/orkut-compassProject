@@ -17,7 +17,7 @@ const MainSection: React.FC = () => {
 
       <div className="info">
         <h2>Good Afternoon, Iuri Silva</h2>
-        <span id="text">“Programar sem café é igual poeta sem poesia.”</span>
+        <span id="text">“Programming without coffee is like a poet without poetry.”</span>
 
         <div className="emojis">
           <div className="division">
