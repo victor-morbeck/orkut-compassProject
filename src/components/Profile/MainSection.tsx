@@ -7,7 +7,7 @@ const MainSection: React.FC = () => {
         <div className="details">
           <img src="./images/user-image.jpeg" alt="profile image" />
           <h2>Iuri Silva</h2>
-          <p>Solteiro, Brasil</p>
+          <p>Single, Brasil</p>
         </div>
 
         <div className="edit">
@@ -16,13 +16,13 @@ const MainSection: React.FC = () => {
       </div>
 
       <div className="info">
-        <h2>Boa tarde, Iuri Silva</h2>
+        <h2>Good Afternoon, Iuri Silva</h2>
         <span id="text">“Programar sem café é igual poeta sem poesia.”</span>
 
         <div className="emojis">
           <div className="division">
             <span>
-              <p>Fãs</p>
+              <p>Fans</p>
               <span id="star">
                 <span className="material-symbols-outlined yellow">
                   star
@@ -32,7 +32,7 @@ const MainSection: React.FC = () => {
             </span>
 
             <span>
-              <p>Confiável</p>
+              <p>Reliable</p>
               <span className="material-symbols-outlined yellow">
                 sentiment_satisfied
               </span>
@@ -44,7 +44,7 @@ const MainSection: React.FC = () => {
 
           <div className="division">
             <span>
-              <p>Legal</p>
+              <p>Cool</p>
               <span className="material-symbols-outlined blue">
                 thumb_up
               </span>
@@ -68,38 +68,38 @@ const MainSection: React.FC = () => {
           </div>
         </div>
 
-        <p>Relacionamento: <span>Solteiro</span></p>
-        <p>Aniversário: <span>21 de julho</span></p>
-        <p>Idade: <span>22</span></p>
-        <p>Interesses no Orkut: <span>Solteiro</span></p>
-        <p>Quem sou eu: <span>Programador</span></p>
-        <p>Filhos: <span>Não</span></p>
-        <p>Sexo: <span>Masculino</span></p>
-        <p>Fumo: <span>Não</span></p>
-        <p>Bebo: <span>Depende do dia</span></p>
-        <p>Moro: <span>Guaratã</span></p>
-        <p>País: <span>Brasil</span></p>
-        <p>Cidade Natal: <span>São Paulo</span></p>
+        <p>Relationship: <span>Single</span></p>
+        <p>Birthday: <span>July, 21</span></p>
+        <p>Age: <span>22</span></p>
+        <p>Orkut interests: <span>Single</span></p>
+        <p>Who am i: <span>Software developer</span></p>
+        <p>Children: <span>No</span></p>
+        <p>Sex: <span>Male</span></p>
+        <p>Smoke: <span>No</span></p>
+        <p>Drink: <span>Depends on the day</span></p>
+        <p>Live: <span>Guaratã</span></p>
+        <p>Country: <span>Brasil</span></p>
+        <p>Hometown: <span>São Paulo</span></p>
         <p>
-          Músicas:
+          Musics:
           <span className="border">Trap</span>
           <span className="border more">Rap</span>
           <span className="border more">Indie</span>
-          <span className="all">Ver todos</span>
+          <span className="all">See more</span>
         </p>
         <p>
-          Filmes:
-          <span className="border">A rede social</span>
-          <span className="border more">Meu amigo totoro</span>
-          <span className="all">Ver todos</span>
+          Movies:
+          <span className="border">The social network</span>
+          <span className="border more">My friend Totoro</span>
+          <span className="all">See more</span>
         </p>
       </div>
 
       <div className="friends_community">
         <div className="friends">
           <span className="title">
-            <p>friends (248)</p>
-            <p className="all">Ver todos</p>
+            <p>Friends (248)</p>
+            <p className="all">See more</p>
           </span>
 
           <div className="profile_friends">
@@ -153,18 +153,18 @@ const MainSection: React.FC = () => {
         <div className="communitys">
           <span className="title">
             <p>community (35)</p>
-            <p className="all">Ver todos</p>
+            <p className="all">See more</p>
           </span>
 
           <div className="img_communitys">
             <div className="division">
               <div className="community">
                 <img src="images/community/unsplash__4sWbzH5fp8.png" alt="pic_community" />
-                <p>Carros</p>
+                <p>Cars</p>
               </div>
               <div className="community">
                 <img src="images/community/unsplash_auEPahZjT40.png" alt="pic_community" />
-                <p>Comida</p>
+                <p>Food</p>
               </div>
               <div className="community">
                 <img src="images/community/unsplash_DomqHKN2Xik.png" alt="pic_community" />
@@ -175,30 +175,30 @@ const MainSection: React.FC = () => {
             <div className="division">
               <div className="community">
                 <img src="images/community/unsplash_RrhhzitYizg.png" alt="pic_community" />
-                <p>Livros</p>
+                <p>Books</p>
               </div>
               <div className="community">
                 <img src="images/community/unsplash_rz3eCYGgGSc.png" alt="pic_community" />
-                <p>Filmes</p>
+                <p>Movies</p>
               </div>
               <div className="community">
                 <img src="images/community/unsplash_uTj6-eZeHto.png" alt="pic_community" />
-                <p>Leitura</p>
+                <p>Lecture</p>
               </div>
             </div>
 
             <div className="division">
               <div className="community">
                 <img src="images/community/unsplash_W0ixyS5kSIk.png" alt="pic_community" />
-                <p>Animais</p>
+                <p>Animals</p>
               </div>
               <div className="community">
                 <img src="images/community/unsplash_wnXo6T_cb3s.png" alt="pic_community" />
-                <p>Arte</p>
+                <p>Art</p>
               </div>
               <div className="community">
                 <img src="./images/community/unsplash_zUNs99PGDg0.png" alt="pic_community" />
-                <p>Café</p>
+                <p>Coffe</p>
               </div>
             </div>
           </div>
