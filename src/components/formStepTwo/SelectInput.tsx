@@ -1,4 +1,5 @@
 import React, { ChangeEvent } from 'react';
+import './SelectInput.css';
 
 interface Option {
   value: string;
@@ -14,7 +15,7 @@ interface SelectInputProps {
 
 const SelectInput: React.FC<SelectInputProps> = ({ label, options, value, onChange }) => {
   return (
-    <div>
+    <div className="select-container"> {/* Adicione a classe aqui */}
       <label>{label}</label>
       <select value={value} onChange={onChange}>
         {options.map((option) => (

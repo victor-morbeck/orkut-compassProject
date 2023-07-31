@@ -1,6 +1,6 @@
-// Importe o componente Favorites corrigido com a interface ajustada.
 import React, { ChangeEvent } from 'react';
 import TextArea from './TextArea';
+import './Favorites.css';
 
 interface FavoritesProps {
   favoriteMusic: string;
@@ -12,8 +12,7 @@ interface FavoritesProps {
 
 const Favorites: React.FC<FavoritesProps> = ({ favoriteMusic, favoriteMovies, favoriteGames, favoriteBooks, onChange }) => {
   return (
-    <div>
-      <h3>Favoritos:</h3>
+    <div className="fav-s"> {/* Adicione a classe fav-s para criar duas colunas */}
       <label>
         <TextArea
           label="Músicas"
@@ -50,4 +49,3 @@ const Favorites: React.FC<FavoritesProps> = ({ favoriteMusic, favoriteMovies, fa
 };
 
 export default Favorites;
-

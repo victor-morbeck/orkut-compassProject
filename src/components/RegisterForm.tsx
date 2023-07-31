@@ -43,7 +43,7 @@
             
              <input type="password"  placeholder="Confirme sua senha"/>
          </label>
-         <input type="submit" value="Cadastrar" id="submitButton" onClick={navigate("#")}/>
+         <input type="submit" value="Cadastrar" id="submitButton" onClick={() => navigate("/registertwo")} />
          </form>
          </div>
      
