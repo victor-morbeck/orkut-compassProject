@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 
 const MainSection: React.FC = () => {
   return (
@@ -208,4 +208,4 @@ const MainSection: React.FC = () => {
   );
 }
 
-export default MainSection;
+export default MainSection; 

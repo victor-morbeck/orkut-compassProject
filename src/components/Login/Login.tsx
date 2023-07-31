@@ -28,7 +28,7 @@ interface LoginProps {
   };
 
   const handleLogin = () => {
-    // Aqui você pode adicionar a lógica de validação dos campos e a navegação para a página de perfil.
+   
     const { email, password } = loginState;
     const errorMessages: { email: string; password: string } = { email: '', password: '' };
 
@@ -43,9 +43,9 @@ interface LoginProps {
     if (errorMessages.email || errorMessages.password) {
       setLoginState({ ...loginState, errorMessages });
     } else {
-      // Neste exemplo, usamos um alerta para simular o redirecionamento para a página de perfil após o login.
+
       alert('Login bem-sucedido! Redirecionando para o perfil...');
-      // Aqui você pode adicionar a navegação real para a página de perfil, por exemplo, usando react-router-dom.
+     
       onLoginSuccess();
     }
   };
