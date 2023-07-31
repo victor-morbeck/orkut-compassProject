@@ -1,19 +1,10 @@
 
  import "./RegisterForm.css"
-
+ import { useNavigate } from 'react-router-dom';
+ 
  export const RegisterForm = () => {
 
-    //Deixar para coletar e validar esses dados depois
-
-
-    //  Gerenciamento de dados
-
-    //  const [name, setName] = useState()
-    //  const [email, setEmail] = useState()
-    
-    //  const handleName = (e) => {
-        
-     
+    const navigate = useNavigate();
 
    return (
      <>
@@ -52,7 +43,7 @@
             
              <input type="password"  placeholder="Confirme sua senha"/>
          </label>
-         <input type="submit" value="Cadastrar" id="submitButton"/>
+         <input type="submit" value="Cadastrar" id="submitButton" onClick={navigate("#")}/>
          </form>
          </div>
      
