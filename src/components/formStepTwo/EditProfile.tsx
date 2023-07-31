@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ProfilePicture from './ProfilePicture';
 import SelectInput from './SelectInput';
 import Favorites from './Favorites';
@@ -49,7 +50,7 @@ const EditProfile: React.FC = () => {
 
   const [submitted, setSubmitted] = useState(false);
 
- 
+  const navigate = useNavigate(); // hook do react-router-dom
 
   const handleChange = (field: keyof FormValues, value: string) => {
     setFormValues((prevState) => ({
@@ -85,6 +86,7 @@ const EditProfile: React.FC = () => {
           favoriteBooks: "",
         },
       });
+      navigate('/profile');
     }, 3000);
   };
 

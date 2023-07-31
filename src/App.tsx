@@ -1,20 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import './App.css';
 import Login from '../src/components/Login/Login';
 import Profile from '../src/components/Profile/Profile';
 import Header from './components/Header/Header';
+import FormStepTwo from './components/formStepTwo/formStepTwo';
+import EditProfile from './components/formStepTwo/EditProfile'; 
+
 
 const App: React.FC = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
 
   const handleLoginSuccess = () => {
     setIsLoggedIn(true);
   };
+
   return (
-    <div className="App">
-      <Header isLoggedIn={isLoggedIn} />
-      {isLoggedIn ? <Profile /> : <Login onLoginSuccess={handleLoginSuccess} />}
-    </div>
+
+    <Router>
+      <div className="App">
+        <Header isLoggedIn={isLoggedIn} />
+        <Routes>
+          <Route path="/" element={<Login onLoginSuccess={handleLoginSuccess} />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/editprofile" element={<EditProfile />} />
+          <Route path="/registertwo" element={<FormStepTwo />} />
+        </Routes>
+      </div>
+    </Router>
+
   );
 };
 

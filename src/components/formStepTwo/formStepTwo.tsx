@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ProfilePicture from './ProfilePicture';
 import SelectInput from './SelectInput';
 import Favorites from './Favorites';
@@ -24,6 +25,7 @@ interface FormValues {
 
 const formStepTwo: React.FC = () => {
   const [profilePicture, setProfilePicture] = useState<File | null>(null);
+
   
   const [formValues, setFormValues] = useState<FormValues>({
     aboutMe: '',
@@ -40,11 +42,9 @@ const formStepTwo: React.FC = () => {
     },
   });
 
-
-
   const [submitted, setSubmitted] = useState(false);
 
-
+  const navigate = useNavigate(); // hook do react-router-dom
 
   function handleChange(field: keyof FormValues, value: string) {
     setFormValues((prevState) => ({
@@ -76,6 +76,7 @@ const formStepTwo: React.FC = () => {
           favoriteBooks: "",
         },
       });
+      navigate('/');
     }, 3000);
   };
 
